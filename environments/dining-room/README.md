@@ -1,0 +1,5 @@
+# ENV_DINING_001 — Dining Room
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
