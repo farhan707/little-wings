@@ -1,0 +1,5 @@
+# ENV_KITCHEN_001 — Kitchen
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
