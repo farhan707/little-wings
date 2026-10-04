@@ -1,0 +1,5 @@
+# ENV_SCHOOL_001 — School
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
