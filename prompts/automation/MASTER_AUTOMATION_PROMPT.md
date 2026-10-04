@@ -93,27 +93,60 @@ If the story needs an unregistered environment:
 Select the smallest sufficient set of approved references.
 
 Rules:
-- Girl + Boy in dining → `REF_MASTER_CHILDREN_DINING_001` if approved; otherwise use individual approved character references plus `ENV_DINING_001`.
-- Girl + Boy + Mother in dining → `REF_MASTER_MOTHER_CHILDREN_DINING_001` if approved.
-- Full family in dining → `REF_MASTER_FAMILY_DINING_001`.
-- Individual character → corresponding approved character reference.
-- Never use a reference marked PENDING as permanent canon.
+- Never attach every available reference by default.
+- Each reference must have an explicit role.
+- Prefer a clean environment master for environment continuity.
+- Prefer approved character masters for identity.
+- If the generation tool has a practical reference limit, stay within that limit.
+- Reuse the active scene reference while the visual state remains unchanged.
+- Do not create a new reference image merely because dialogue or a small action changes.
 
-### STEP 5 — SCENE AND CLIP BREAKDOWN
+Reference-role examples:
+- Character identity
+- Existing character continuity
+- Environment
+- New prop
+- New character
 
-Break the story into production clips.
+If adding another reference would likely reduce character/environment consistency, use a better-composed scene reference instead of blindly increasing the reference count.
 
-Default:
-- 5–10 seconds per clip
-- one primary action per clip
-- one clear emotional beat per clip
-- one primary speaking character per shot when dialogue is required
-- avoid unnecessary camera changes
-- keep continuity between adjacent clips
+### STEP 5 — PRODUCTION-PART PLANNING
 
-For long dialogue, split it across clips rather than forcing multiple speakers into one shot.
+For a target runtime of approximately 30 seconds:
+- default to approximately **3 coherent production parts**
+- target approximately **8–10 seconds per part**
+- optimize for simple editing
+- avoid unnecessary micro-clips
 
-### STEP 6 — DIALOGUE ASSIGNMENT
+Example:
+- Part 1: Setup/problem
+- Part 2: Explanation/discovery
+- Part 3: Resolution/payoff
+
+Change the number of parts only when story structure genuinely requires it.
+
+### STEP 6 — SCENE REFERENCE STATE
+
+For every production part, determine the active scene reference state.
+
+Reuse the same reference image while:
+- characters are unchanged
+- environment is unchanged
+- important props are unchanged
+- clothing is unchanged
+- composition remains suitable
+
+Create/select a new reference state only when:
+- a new character enters
+- a major new object becomes important
+- location changes
+- character grouping changes substantially
+- meaningful costume/appearance change occurs
+- composition changes enough that the existing reference is insufficient
+
+A new scene reference state is not automatically canon.
+
+### STEP 7 — DIALOGUE ASSIGNMENT
 
 Every dialogue line must contain:
 - speaker ID
@@ -129,9 +162,9 @@ Default spoken language:
 Visual prompts:
 - English unless the user explicitly requests another language.
 
-### STEP 7 — ACTION ASSIGNMENT
+### STEP 8 — ACTION ASSIGNMENT
 
-For every clip specify:
+For every part specify:
 - character
 - primary action
 - secondary reaction if necessary
@@ -140,7 +173,7 @@ For every clip specify:
 
 Keep actions physically simple and visually clear.
 
-### STEP 8 — CAMERA ASSIGNMENT
+### STEP 9 — CAMERA ASSIGNMENT
 
 Specify:
 - shot type
@@ -153,7 +186,7 @@ Default to stable cinematic framing.
 
 Do not introduce dramatic camera movement unless the story benefits from it.
 
-### STEP 9 — CHARACTER LOCK
+### STEP 10 — CHARACTER LOCK
 
 Every video prompt must preserve:
 - face
@@ -163,10 +196,11 @@ Every video prompt must preserve:
 - age appearance
 - accessories
 - canonical color details
+- relative age/size relationships between established characters
 
 Never redesign a character for convenience.
 
-### STEP 10 — ENVIRONMENT LOCK
+### STEP 11 — ENVIRONMENT LOCK
 
 Every video prompt must preserve:
 - room layout
@@ -180,19 +214,20 @@ Every video prompt must preserve:
 
 New temporary story props may be added only when required by the story.
 
-### STEP 11 — STRICT LIP-SYNC LOCK
+### STEP 12 — STRICT LIP-SYNC LOCK
 
-Every dialogue clip must include:
+Every dialogue part must include:
 
 IMPORTANT STRICT LIP-SYNC:
 Only the character currently speaking may move their lips and mouth. All silent characters must keep their mouths closed. Never animate the lips of the wrong character. Match each dialogue line to the exact character shown speaking.
 
-Prefer one speaker per shot.
+Prefer one speaker per generated part.
 
-### STEP 12 — VIDEO PROMPT GENERATION
+### STEP 13 — VIDEO PROMPT GENERATION
 
-Each clip must receive one self-contained English video-generation prompt containing:
+Each production part must receive one self-contained English video-generation prompt containing:
 - canonical reference instruction
+- reference roles
 - character identity lock
 - environment lock
 - action
@@ -205,18 +240,21 @@ Each clip must receive one self-contained English video-generation prompt contai
 
 Do not overload a prompt with unrelated actions.
 
-### STEP 13 — QA
+### STEP 14 — QA
 
 Before returning the production plan, validate:
 - all character IDs exist
 - all permanent references are APPROVED
 - environment IDs exist
 - dialogue has a speaker
-- speaker appears in the clip
+- speaker appears in the part
 - only active speaker has moving lips
-- clip duration is practical
-- actions are achievable
-- adjacent clips maintain continuity
+- age/relative size is correct
+- reference count is practical
+- scene reference is reused when possible
+- no unnecessary micro-clips were created
+- parts are easy to assemble
+- adjacent parts maintain continuity
 - no canon rule is contradicted
 - no generated creative suggestion has been promoted to canon
 
@@ -225,6 +263,13 @@ Before returning the production plan, validate:
 Return both:
 1. Human-readable production plan
 2. Machine-readable structured production data following `PRODUCTION_OUTPUT_SCHEMA.md`
+
+The plan must explicitly show:
+- production parts
+- active scene reference per part
+- when the reference changes and why
+- which characters/objects are introduced at each change
+- final target runtime
 
 ## CANON SAFETY
 
@@ -236,8 +281,8 @@ If the story conflicts with canon:
 
 ## FINAL PRINCIPLE
 
-Consistency wins over unnecessary creativity.
+**Consistency and editability win over unnecessary creativity or fragmentation.**
 
-The goal is not merely to generate a good-looking clip.
+The goal is not merely to generate many good-looking clips.
 
-The goal is to generate a clip that belongs unmistakably to the Little Wings universe.
+The goal is to generate the fewest practical, coherent clips that belong unmistakably to the Little Wings universe and can be assembled easily into the final video.
