@@ -1,0 +1,5 @@
+# ENV_GARDEN_001 — Garden / Outdoor Area
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
