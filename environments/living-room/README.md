@@ -1,0 +1,5 @@
+# ENV_LIVING_001 — Living Room
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
