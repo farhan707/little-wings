@@ -19,6 +19,22 @@ Story
 ## Clip Length
 Target short clips suitable for current generation tools, normally **5–10 seconds**.
 
+### Short-Form Exception
+For reels, shorts, teasers, and other short-form adaptations, clips may be **2–5 seconds** when required for:
+- short dialogue
+- reaction shots
+- facial expressions
+- quick actions
+- transitions
+- pacing
+- short-form runtime constraints
+
+A short-form clip below 5 seconds is **not automatically a canon violation**.
+
+The automation engine should only flag unusually short clips when their duration negatively affects dialogue clarity, action readability, lip-sync, continuity, or production quality.
+
+The total runtime of a short-form adaptation should take priority over forcing every clip into the standard 5–10 second range.
+
 ## Scene Design
 Each clip should have:
 - one primary action
