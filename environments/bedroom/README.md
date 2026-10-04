@@ -1,0 +1,5 @@
+# ENV_BEDROOM_001 — Bedroom
+
+Status: CANDIDATE / PENDING APPROVAL
+
+Master reference: PENDING REGISTRATION
