@@ -286,3 +286,18 @@ If the story conflicts with canon:
 The goal is not merely to generate many good-looking clips.
 
 The goal is to generate the fewest practical, coherent clips that belong unmistakably to the Little Wings universe and can be assembled easily into the final video.
+
+
+### Video-to-Video Continuity Rule
+
+When the selected generation tool supports video-to-video/reference-video continuity, use it as the preferred continuation method after the first clip of an unchanged scene.
+
+**First clip:** Use the minimum approved master character/environment references needed to establish the scene.
+
+**Following clips:** Use the immediately previous generated clip as the primary continuity reference when the visual state remains unchanged. Do not unnecessarily reattach every master reference.
+
+**Re-anchor when:** a new character enters, a major new object is introduced, location changes, meaningful costume/appearance changes, character grouping changes substantially, or continuity drift is detected.
+
+The generated clip is a temporary continuity reference, not a new canon source. Canon remains controlled by the Series Bible and approved master references.
+
+The production plan should record the reference mode as one of: MASTER_SETUP, VIDEO_CONTINUATION, or RE_ANCHOR.
