@@ -77,3 +77,17 @@ Never sacrifice established character/environment consistency merely to attach e
 
 ## Generation Failure
 If identity, lip-sync, anatomy, environment, age/relative-size, or continuity fails, mark the part for regeneration rather than accepting a visibly inconsistent result.
+
+
+## Video-to-Video Continuity
+
+When supported by the generation tool, use the previous generated video as the primary reference for the next clip when the scene has not materially changed.
+
+Recommended chain:
+**Master References → Clip 1 → Clip 2 → Clip 3**
+
+Clip 1 establishes the scene using approved references. Clip 2 uses Clip 1 as its continuity reference. Clip 3 uses Clip 2 as its continuity reference. Repeat until a meaningful visual change requires re-anchoring.
+
+Re-anchor with approved references when a new character enters, a major new object becomes important, the location changes, costume/appearance changes, character grouping changes substantially, or visual drift is detected.
+
+The previous video reference does not override canon. Approved master references remain the source of truth.
