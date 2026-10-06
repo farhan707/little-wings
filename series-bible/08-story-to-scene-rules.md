@@ -126,3 +126,18 @@ Every production part should contain:
 - lip_sync_instruction
 - continuity_notes
 - qa_status
+
+
+## Video-to-Video Continuity Strategy
+
+When the generation tool supports using a previously generated video clip as the next generation's reference, prefer this continuity chain:
+
+**Approved Master References → First Video Clip → Next Video Clip → Next Video Clip**
+
+For the first clip of a scene, provide the minimum approved character/environment references required to establish the visual state.
+
+For the next clip, if the same characters and environment remain, no important new object is introduced, and no meaningful costume/appearance change occurs, use the previous generated video clip as the primary continuity reference instead of repeatedly attaching all original character/environment reference images.
+
+This is a production continuity technique, not a canon replacement. Approved master references remain the authority for identity and environment.
+
+When a new character, major object, location, or meaningful visual state is introduced, establish the new state with the necessary approved references and then continue the new video-to-video chain.
