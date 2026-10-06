@@ -92,3 +92,20 @@ Do not attach redundant references merely because they exist.
 If no suitable reference exists, flag the scene for reference creation instead of silently inventing a new canon design.
 
 A newly generated scene reference is temporary until explicitly approved as canon.
+
+
+## Generated-Video Continuity References
+
+A generated video clip may be used as a scene continuity reference for the next clip when the generation tool supports video references.
+
+Use this chain:
+1. Approved character/environment references establish the first visual state.
+2. The generated clip becomes the continuity reference for the next clip.
+3. The next generated clip becomes the continuity reference for the following clip.
+4. Continue the chain until a meaningful visual state change occurs.
+
+The generated video is not automatically canon. It is a temporary continuity reference derived from canon.
+
+If continuity drifts, return to the approved master references and re-anchor the scene.
+
+Do not keep adding more reference images when the previous generated clip already provides sufficient continuity. Fewer, well-defined references are preferred when they produce stronger consistency.
